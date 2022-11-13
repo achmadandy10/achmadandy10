@@ -14,7 +14,7 @@ const ModelThreeComponent: FC = (): JSX.Element => {
   const [loading, setLoading] = useState(true);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const refRenderer = useRef<any>();
-  const urlModelThreeGLB = '/old_computer.glb';
+  const urlModelThreeGLB = '/retro_computer.glb';
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
@@ -46,7 +46,7 @@ const ModelThreeComponent: FC = (): JSX.Element => {
       const scene = new THREE.Scene();
 
       // const target = new THREE.Vector3(-0.5, 1.2, 0);
-      const target = new THREE.Vector3(-0.5, -2.2, 0);
+      const target = new THREE.Vector3(-0.001, 0.1, 0);
       const initialCameraPosition = new THREE.Vector3(
         90 * Math.sin(0.2 * Math.PI),
         80,
@@ -56,7 +56,7 @@ const ModelThreeComponent: FC = (): JSX.Element => {
       // 640 -> 240
       // 8   -> 6
       // const scale = scH * 0.005 + 4.8;
-      const scale = scH * 0.005 + 40;
+      const scale = scH * 0.005 + -1.8;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,

@@ -15,7 +15,7 @@ const ModelThreeContainerComponent: ForwardRefRenderFunction<
   return (
     <Box
       ref={ref}
-      className="old_computer"
+      className="retro_computer"
       margin={'auto'}
       marginTop={['-20px', '-60px', '-120px']}
       marginBottom={['-40px', '-140px', '-200px']}

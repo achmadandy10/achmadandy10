@@ -15,7 +15,7 @@ export function loadGLTFModel(
       glbPath,
       gltf => {
         const obj = gltf.scene;
-        obj.name = 'old_computer';
+        obj.name = 'retro_computer';
         obj.position.y = 0;
         obj.position.x = 0;
         obj.receiveShadow = receiveShadow;
