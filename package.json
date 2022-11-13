@@ -1,0 +1,53 @@
+{
+  "name": "portfo_v1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portfolio - Achmad Andy Dekanovy",
+  "keywords": [
+    "nextjs",
+    "portfolio"
+  ],
+  "author": "Achmad Andy Dekanovy<achmadandy2@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "prettier --write .",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write .",
+    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.11",
+    "@chakra-ui/react": "^2.3.5",
+    "@chakra-ui/theme-tools": "^2.0.12",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "framer-motion": "^7.5.2",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "three": "^0.145.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.2",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "@types/three": "^0.144.0",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "8.24.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.8",
+    "husky": "^8.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "4.8.4"
+  }
+}
